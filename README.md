@@ -22,10 +22,10 @@
 
 ## Project_Making
 This session is dedicated to the process of making the app.
-First I wget 'https://bulletin.case.edu/course-descriptions/' and then edit the html file to only contain the links of the subjects left.
-Then I use grep to clear out the html code, only link left. I added wget and here and there, and then source to wget all of the subject links.
+First I wget 'https://bulletin.case.edu/course-descriptions/' and then edit the html file so that it only contains the course links of the individual subjects left.
+Then I use `grep` and some bash code to clear out the html code, only links left. I added `wget` and the address prefix https://bulletin.case.edu and basically everything to make it works, and then `source` to `wget` all of the subject links. This is the result in the directory after that.
 <img src='https://i.imgur.com/QVkUUiJ.png'/>
-Then I had to write a php code (exec.php) to only extract the data I need in every html file, which looks somewhat like this.
+Then I had to write a php code (exec.php) to only extract the data I need in every individual html files, which looks somewhat like this.
 
 > ACCT 100. Foundations of Accounting I. 3 Units.
 > 
@@ -35,9 +35,13 @@ Then I had to write a php code (exec.php) to only extract the data I need in eve
 > managerial, and tax accounting in business. This course is intended
 > for both business and non-business majors. This is the first required
 > accounting course for all business majors.
+> 
+> ACCT 106. ...
+> ...
 
-Basically what the `exec.php` does is that it extracts the content of specific divs, and follows a lot of editing and regex. The result is the `data` file with 4 columns: the class code, class title, class unit and class description, and the delimiter is tab.
-<img src='https://i.imgur.com/6bzT2I7.png'>
+Basically what the `exec.php` does is that it extracts the content of specific divs, and a lot of editing and regex. The result is the `data` file with 4 columns: the class code, class title, class unit and class description. The delimiter for the columns is `tab`.
+<img src='https://i.imgur.com/6bzT2I7.png'>  
+
 Now I create my project file in `public_html`, consist of:
 1. `public.html`: for the front-end
 2. `server.php`: this handles scanning the data file, storing them into variables and finding if the user's search matches anything in the data.
