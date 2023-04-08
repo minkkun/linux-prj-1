@@ -60,7 +60,7 @@ public_html/
 - See the code of the project here: https://github.com/minkkun/linux-prj-1/
 
 ## Fellow_Student_Critique
-- I did the feedback for Long Nguyen, @lhn15.
+- I did the feedback for Long Nguyen, @lhn15. His project: http://eecslab-22.case.edu/~lhn15/Prj1Linux/index.html
 - I was very amazed by how many things you put into your project. The jokes are actually fun, though. Definitely a fun site for me with the use of API. Yet I feel like this project lacks originality as it basically extracts other websites into yours. I feel like this could be a much more powerful app if this can be a dashboard, with the to-do-list, the weather, calendar and everything. Something like this. The Notion dashboard is a very trendy things nowadays and your webapp has the potential of going big if there are more functionalities!
 <img src='https://images.squarespace-cdn.com/content/v1/5a049a70be42d60e92dd8246/1618860571523-DJ13PONV3WXB1GBUD2AZ/aesthetic-notion-dashboards-14.png?format=1500w'>
  Somehow I just feel like this is a greater fit for the Web Dev class more than this class. Yet, overall, I feel like your project is a very fun one and I enjoy every parts of it.
